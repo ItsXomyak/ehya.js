@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"target": "ES2020", // до какого стандарта JS компилировать
+		"module": "ESNext", // поддержка ES модулей
+		"moduleResolution": "node",
+		"strict": true, // строгая типизация (must have!)
+		"esModuleInterop": true, // импорт из CommonJS (require)
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true, // не проверять типы в node_modules
+		"outDir": "./dist", // куда класть скомпилированный JS
+		"rootDir": "./src", // откуда брать исходники
+		"resolveJsonModule": true, // импорт JSON как модуль
+		"noImplicitAny": true, // запрещает неявный any
+		"strictNullChecks": true // обязательная проверка на null/undefined
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist"]
+}
